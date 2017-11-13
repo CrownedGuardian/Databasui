@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block body %}
+<script type=text/javascript>
+    $(function() {
+        $("#submitBtn").click(function() {
+            $.ajax({
+                type: "GET",
+                url: $SCRIPT_ROOT + "/echo/",
+                contentType: "application/xml; charset=utf-8",
+                data: { echoValue:  $('input[name="echoText"]').val() },
+                success: function(data) {
+                    $('#echoResult').text(data.value);
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert(errorThrown);
+                }
+            });     
+        });
+    });
+</script>
+<form action="{{ url_for('handle_data') }}" method="post">
+          <input type="text" id="test"/>
+           <input type="submit" id="testButton"/>
+</form>
+{% endblock %}
