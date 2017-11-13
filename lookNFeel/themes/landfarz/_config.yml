@@ -1,0 +1,29 @@
+menu:
+  其它教程: /misc
+  书单: /booklist
+  公开课: /mooc
+  开发者: /developer
+  归档页: https://github.com/it-ebooks/it-ebooks-archive
+  关于: /about
+  龙哥盟: http://www.flygon.net
+  RSS: /atom.xml
+  "fork me on github": https://github.com/it-ebooks/blog
+
+sidebar: right
+widgets:
+- about
+- support
+- link
+- account
+
+# Duoshuo
+duoshuo_shortname: fl-it-ebooks
+
+fancybox: true
+
+google_analytics:
+rss: /atom.xml
+
+google_site_verification: NCXVSqxqB-os803-VFMtIEd1SUNJVOIjctCfNYUwD0w
+baidu_site_verification: 
+icon: 
